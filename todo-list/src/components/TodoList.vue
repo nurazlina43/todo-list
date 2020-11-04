@@ -23,13 +23,13 @@ export default {
         }
     },
     methods: {
-        completeTodo(todo) {
+        completeTodo(todo) { //todo is payload that received
             // get the index of todo clicked
             // set the done prop to true and save to local storage
-            let index = this.todos.indexOf(todo)
-            this.todos[index]['done'] = true
+            let index = this.todos.indexOf(todo);
+            this.todos[index]['done'] = true;
             localStorage.setItem("todos", JSON.stringify(this.todos));
-            swal("Good Job! Todo completed", "success");
+            swal("Good Job! Todo Completed", "success");
         },
         deleteTodo(todo) {
             swal({
@@ -45,8 +45,8 @@ export default {
                         // splice it off
                         let index = this.todos.indexOf(todo);
                         this.todos.splice(index, 1);
-                        localStorage.setItem("todos", JSON.stringify(thi.todos));
-                        swal("Deleted!", "Todo has been deleted successfully!", "success");
+                        localStorage.setItem("todos", JSON.stringify(this.todos));
+                        swal("success", "Todo has been deleted successfully!", "success");
                     }
                 });
 

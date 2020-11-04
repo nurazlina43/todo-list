@@ -13,7 +13,7 @@ Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 
-/* eslint-disable no-new */
+/* eslint-disable */
 new Vue({
   el: '#app',
   components: { App },
