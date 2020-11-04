@@ -5,7 +5,7 @@
     </div>
     <form class="detail-box" v-show="isOpen">
         <div class="form-group">
-            <label>Title</label>
+            <label>To-do</label>
             <input class="form-control" type="text" v-model="title" />
         </div>
         <div class="form-group">
@@ -67,7 +67,7 @@ input[type="text"] {
 .detail-box {
     padding: 5px;
     border: 1px solid lightgrey;
-    width: 300px;
+    width: 350px;
     height: 250px;
     margin: 0 auto;
 }

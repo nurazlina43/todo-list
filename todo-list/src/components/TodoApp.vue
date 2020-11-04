@@ -1,7 +1,7 @@
 <template>
 <div>
     <h1>TO-DO APP</h1>
-    <TodoList />
+    <TodoList :key="shouldUpdate" />
     <!--will add a listener to create-todo event  -->
     <CreateTodo v-on:create-todo="CreateTodo" />
 
