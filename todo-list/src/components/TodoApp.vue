@@ -1,9 +1,9 @@
 <template>
 <div>
     <h1>TO-DO APP</h1>
-    <TodoList :key="shouldUpdate" />
     <!-- add a listener to create-todo event  -->
     <CreateTodo v-on:create-todo="CreateTodo" />
+    <TodoList :key="shouldUpdate" />
 
 </div>
 </template>
@@ -29,10 +29,14 @@ export default {
             let todoArr = localStorage.hasOwnProperty("todos") ?
                 JSON.parse(localStorage.getItem("todos")) : [];
             todoArr.push(newTodo);
-            this.shouldUpdate = this.shouldUpdate;
+            this.shouldUpdate = !this.shouldUpdate;
             localStorage.setItem("todos", JSON.stringify(todoArr));
 
         }
     }
 }
 </script>
+
+<style scoped>
+
+</style>

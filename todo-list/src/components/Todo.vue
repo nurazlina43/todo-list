@@ -19,7 +19,7 @@
     <div class="mb-4" v-show="isEditing">
         <form class="detail-box ht-250">
             <div class="form-group">
-                <label>Title</label>
+                <label>To-do</label>
                 <input class="form-control" type="text" v-model="todo.title" />
             </div>
             <div class="form-group">
@@ -27,7 +27,7 @@
                 <input class="form-control" type="text" v-model="todo.description" />
             </div>
             <div>
-                <b-button pill type="button" v-on:click="closeForm">Close</b-button>
+                <b-button pill type="button" v-on:click="closeForm">Done</b-button>
             </div>
 
         </form>
@@ -71,6 +71,7 @@ input[type="text"] {
 
 .detail-box {
     padding: 5px;
+    background-color: lightblue;
     border: 1px solid lightgrey;
     width: 350px;
     min-height: 155px;
@@ -88,5 +89,6 @@ input[type="text"] {
 
 .pt-12 {
     padding-top: 12px;
+    cursor: pointer;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
 <div class="mb-3">
-    <label>Click <b-button pill variant="primary" type="button" v-on:click="openForm"> + </b-button> to add to do list</label>
+    <label>To add your to-do list, click <b-button pill variant="primary" type="button" v-on:click="openForm"> + </b-button></label>
     <div><br>
     </div>
     <form class="detail-box" v-show="isOpen">

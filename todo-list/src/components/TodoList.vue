@@ -29,7 +29,7 @@ export default {
             let index = this.todos.indexOf(todo);
             this.todos[index]['done'] = true;
             localStorage.setItem("todos", JSON.stringify(this.todos));
-            swal("Good Job! Todo Completed", "success");
+            swal("Success", "Good Job! Todo Completed", "success");
         },
         deleteTodo(todo) {
             swal({
@@ -46,7 +46,7 @@ export default {
                         let index = this.todos.indexOf(todo);
                         this.todos.splice(index, 1);
                         localStorage.setItem("todos", JSON.stringify(this.todos));
-                        swal("success", "Todo has been deleted successfully!", "success");
+                        swal("Success", "Todo has been deleted successfully!", "success");
                     }
                 });
 
